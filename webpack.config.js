@@ -16,7 +16,7 @@ module.exports = {
             {
                 // if we are in a .js file
                 test: /\.js$/,
-                loader: '',
+                loader: 'babel-loader',
                 exclude: /node_modules/
             }
         ]
