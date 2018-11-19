@@ -4,6 +4,7 @@
   "description": "basic react app using webpack",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +18,12 @@
   },
   "homepage": "https://github.com/barclayd/BasicWebpackReactApp#readme",
   "devDependencies": {
-    "webpack": "^4.26.0",
+    "webpack": "^3.12.0",
     "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1"
   }
 }
