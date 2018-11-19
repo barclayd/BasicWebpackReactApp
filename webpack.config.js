@@ -1,5 +1,7 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
     entry: './src/index.js',
@@ -55,5 +57,12 @@ module.exports = {
                 loader: 'url-loader?limit=8000&name=images/[name].[ext]'
             }
         ]
-    }
+    },
+    plugins: [
+       new htmlWebpackPlugin({
+           template: __dirname + '/src/index.html',
+           filename: 'index.html',
+           inject: 'body'
+       })
+    ]
 };
